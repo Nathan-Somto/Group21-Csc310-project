@@ -1,159 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Csc 310 Project</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./App.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- navbar  for the site that uses an unordered list -->
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#Biodata">Biodata</a></li>
-            <li><a href="#Calculator">Calculator</a></li>
-            <li><a href="#">Bio Form</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#Biodata">Biodata</a></li>
+        <li><a href="#Calculator">Calculator</a></li>
+        <li><a href="#BioForm">Bio Form</a></li>
+      </ul>
     </nav>
+    <!-- the heading that hosts the main website text -->
     <header>
-      
-        <div class="overlay">
-            <div class="text">
-            <h1>Welcome to our Csc 310 project </h1>
-            <h2 id='type'></h2>
-           
-          
-            </div>
-           <a href="#about"> <img class="arrow" src="./arrow-down-icon.svg" alt=""></a>
-      
+      <div class="overlay">
+        <div class="text">
+          <h1>Welcome to our Csc 310 project</h1>
+          <h2 id="type"></h2>
         </div>
+        <a href="#about">
+          <img class="arrow" src="./arrow-down-icon.svg" alt=""
+        /></a>
+      </div>
     </header>
+    <!-- main contains the main information for the site -->
     <main>
-        <section class="about_section" id="about">
-            <h1>About Us</h1>
-            <p>We are a bunch of computer science students who like to code and this site is a living proof.</p>
-        </section>
-           
-        <section class="at-section container">
-            <h1 class="at-section_title">The team</h1>
-            <div class="at-grid">
-                <div class="at-column">
-                    <div class="at-user">
-                        <img src="./john_doe.jpg" alt="" class="at-user_avatar">
-                        <h3 class="at-user_name">Mkparu Somtochi</h3>
-                        <p>Matno: 20CG028101</p>
-
-                        <ul class="at-social">
-                            <li class="at-social_item"><img src="./facebook.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./twitter.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./instagram.svg" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="at-column">
-                    <div class="at-user">
-                        <img src="./john_doe2.jpg" alt="" class="at-user_avatar">
-                        <h3 class="at-user_name">Femi</h3>
-                        <p>Matno: 20CG028126</p>
-                        <ul class="at-social">
-                            <li class="at-social_item"><img src="./facebook.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./twitter.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./instagram.svg" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="at-column">
-                    <div class="at-user">
-                        <img src="./jane_doe.jpg" alt="" class="at-user_avatar">
-                        <h3 class="at-user_name">Ede</h3>
-                        <p>Matno: 20CD02****</p>
-                        <ul class="at-social">
-                            <li class="at-social_item"><img src="./facebook.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./twitter.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./instagram.svg" alt=""></li>
-                        </ul>
-                    </div>
-                    </div>
-                <div class="at-column">
-                    <div class="at-user">
-                        <img src="./john_doe3.jpg" alt="" class="at-user_avatar">
-                        <h3 class="at-user_name">john doe</h3>
-                        <p>Matno: 20CG*****</p>
-                        <ul class="at-social">
-                            <li class="at-social_item"><img src="./facebook.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./twitter.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./instagram.svg" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="at-column">
-                    <div class="at-user">
-                        <img src="./john_doe4.jpg" alt="" class="at-user_avatar">
-                        <h3 class="at-user_name">john doe</h3>
-                        <p>Matno: 20CG*****</p>
-                        <ul class="at-social">
-                            <li class="at-social_item"><img src="./facebook.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./twitter.svg" alt=""></li>
-                            <li class="at-social_item"><img src="./instagram.svg" alt=""></li>
-                        </ul>
-                    </div>
+      <!-- about section -->
+      <section class="about_section" id="about">
+        <h1>About Us</h1>
+        <p>
+          We are a bunch of computer science students who like to code and this
+          site is a living proof.
+        </p>
+      </section>
+      <!-- biodata section -->
+      <div id="Biodata"></div>
+      <section class="at-section container">
+        <h1 class="at-section_title">Group 16(the team)</h1>
+        <div class="at-grid">
+          <div class="at-column">
+            <div class="at-user">
+              <img src="./pics/somto.jpg" alt="" class="at-user_avatar" />
+              <h3 class="at-user_name">Mkparu Somtochi</h3>
+              <div class="at-user_info">
+              <p>Matno: 20CG028101</p>
+              <p>Age:   18</p>
+              <p>Programme: Computer Science</p>
+              </div>
+            </div>
+            <ul class="at-social">
+                <li class="at-social_item">
+                  <img src="./facebook.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./twitter.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./instagram.svg" alt="" />
+                </li>
+              </ul>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <img src="./pics/femi.jpg" alt="" class="at-user_avatar" />
+              <h3 class="at-user_name">Oluwabamise Oluwanifemi</h3>
+              <div class="at-user_info">
+                <p>Matno: 20CG028126</p>
+                <p>Age:   18</p>
+                <p>Programme: Computer Science</p>
                 </div>
             </div>
-
-        </section>
-        <section class="section_form">
-            <h1>Join Our Team</h1>
-            <form action="">
-
-                <div><label for="">Name</label><input type="text"></div>
-                <div><label for="">MatNo</label><input type="text"></div>
-                <div><label for="">img</label><input type="file"></div>
-                <div><label for="">Facebook link</label><input type="text"></div>
-                <div><label for="">Twitter link</label><input type="text"></div>
-                <div><label for="">instagram link</label><input type="text"></div>
-                <input type="submit" value="Join our Team">
-            </form>
-        </section>
-        <div id="Calculator"></div>
-        <section >
-            <h1 style="text-align: center; font-size:2.5rem;">Our Calculator</h1>
-            <div class="calc-container">
-                <div class="screen">
-                    <!-- A hamburger menu will be created here to access the advanced features of the calculator -->
-                    <div id ="expression"></div>
-                    <div id ="currentOperand">0</div>
+            <ul class="at-social">
+                <li class="at-social_item">
+                  <img src="./facebook.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./twitter.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./instagram.svg" alt="" />
+                </li>
+              </ul>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <img src="./pics/ede.jpg" alt="" class="at-user_avatar" />
+              <h3 class="at-user_name">Edeghoghon Obozokhae</h3>
+              <div class="at-user_info">
+              <p>Matno: 20CD028256</p>
+              <p>Age: 19</p>
+              <p>Programme: Computer Science</p>
+            </div>
+            </div>
+            <ul class="at-social">
+                <li class="at-social_item">
+                  <img src="./facebook.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./twitter.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./instagram.svg" alt="" />
+                </li>
+              </ul>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <img src="./pics/demilade.jpg" alt="" class="at-user_avatar" />
+              <h3 class="at-user_name">Osanupin Demilade</h3>
+              <div class="at-user_info">
+                <p>Matno: 20CD028267</p>
+                <p>Age: 19</p>
+                <p>Programme: Computer Science</p>
+              </div>
+             
+            </div>
+            <ul class="at-social">
+                <li class="at-social_item">
+                  <img src="./facebook.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./twitter.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./instagram.svg" alt="" />
+                </li>
+              </ul>
+          </div>
+          <div class="at-column">
+            <div class="at-user">
+              <img src="./pics/jennydoe.jpg" alt="" class="at-user_avatar" />
+              <h3 class="at-user_name">Ofili-Udo Chizetelu</h3>
+              <div class="at-user_info">
+                <p>Matno: 20CH028176</p>
+                <p>Age:   18</p>
+                <p>Programme: M.I.S</p>
                 </div>
-                <!-- the Html for Basic features starts here -->
-                    <button  class = "row-lg"id ="allClear">AC</button>
-                    <button class ="row-lg" id ="clear">CE</button>
-                    <button  class ="row-lg" class = "num" data-operator = "%">%</button>
-                    <button class ="col-o" data-operator = "/">&divide</button>
-                    <button  class = "row-g"data-number = "7">7</button>
-                    <button  class = "row-g"data-number= "8">8</button>
-                    <button class = "row-g"  data-number = "9">9</button>
-                    <button class = "col-o
-                    " data-operator = "*">&times</button>
-                    <button  class = "row-g"data-number = "4">4</button>
-                    <button  class ="row-g" data-number ="5">5</button>
-                    <button class = "row-g" data-number ="6">6</button>
-                    <button  class = "col-o"data-operator ="-">-</button>
-                    <button  class = "row-g"data-number = "1">1</button>
-                    <button  class = "row-g" data-number = "2">2</button>
-                    <button  class = "row-g" data-number = "3">3</button>
-                    <button  class ="col-o" data-operator = "+">+</button>
-                    <button class = "zero two row-g"data-number  = "0">0</button>
-                    <button  class = "row-g" data-number = ".">.</button>
-                    <button id ="equals" class = "col-o">=</button>
-                    <!-- the Html for Advanced features starts here -->
-        
+            </div>
+            <ul class="at-social">
+                <li class="at-social_item">
+                  <img src="./facebook.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./twitter.svg" alt="" />
+                </li>
+                <li class="at-social_item">
+                  <img src="./instagram.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div class="at-column">
+                <div class="at-user">
+                  <img src="./pics/jondoe.jpg" alt="" class="at-user_avatar" />
+                  <h3 class="at-user_name">Akinbinu Donald</h3>
+                  <div class="at-user_info">
+                    <p>Matno: 20CH028149</p>
+                    <p>Age:   19</p>
+                    <p>Programme: M.I.S</p>
+                    </div>
                 </div>
-        </section>
+                <ul class="at-social">
+                    <li class="at-social_item">
+                      <img src="./facebook.svg" alt="" />
+                    </li>
+                    <li class="at-social_item">
+                      <img src="./twitter.svg" alt="" />
+                    </li>
+                    <li class="at-social_item">
+                      <img src="./instagram.svg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+          </div>
+        </div>
+      </section>
+      <!-- form section for site -->
+      <div id="Bioform"></div>
+      <section class="section_form">
+        <h1>Join Our Team</h1>
+        <form action="">
+          <div><label for="">Name</label><input type="text" /></div>
+          <div><label for="">MatNo</label><input type="text" /></div>
+          <div><label for="">Age</label><input type="number" /></div>
+          <div><label for="">Programme</label><input type="text" /></div>
+          
+          <div><label for="">img</label><input type="file" /></div>
+          <div><label for="">Facebook link</label><input type="text" /></div>
+          <div><label for="">Twitter link</label><input type="text" /></div>
+          <div><label for="">instagram link</label><input type="text" /></div>
+          <input type="submit" value="Join our Team" />
+        </form>
+      </section>
+      <!-- Calculator section -->
+      <div id="Calculator"></div>
+      <section>
+        <h1 style="text-align: center; font-size: 2.5rem;">Our Calculator</h1>
+        <div class="calc-container">
+          <div class="screen">
+            <!-- A hamburger menu will be created here to access the advanced features of the calculator -->
+            <div id="expression"></div>
+            <div id="currentOperand">0</div>
+          </div>
+          <!-- the Html for Basic features starts here -->
+          <button class="row-lg" id="allClear">AC</button>
+          <button class="row-lg" id="clear">CE</button>
+          <button class="row-lg" class="num" data-operator="%">%</button>
+          <button class="col-o" data-operator="/">&divide</button>
+          <button class="row-g" data-number="7">7</button>
+          <button class="row-g" data-number="8">8</button>
+          <button class="row-g" data-number="9">9</button>
+          <button class="col-o" data-operator="*">&times</button>
+          <button class="row-g" data-number="4">4</button>
+          <button class="row-g" data-number="5">5</button>
+          <button class="row-g" data-number="6">6</button>
+          <button class="col-o" data-operator="-">-</button>
+          <button class="row-g" data-number="1">1</button>
+          <button class="row-g" data-number="2">2</button>
+          <button class="row-g" data-number="3">3</button>
+          <button class="col-o" data-operator="+">+</button>
+          <button class="zero two row-g" data-number="0">0</button>
+          <button class="row-g" data-number=".">.</button>
+          <button id="equals" class="col-o">=</button>
+          <!-- the Html for Advanced features starts here -->
+        </div>
+      </section>
     </main>
-    <footer style="color:#fff;">&copy 2023  donot steal</footer>
-    
-</body>
+    <footer style="color: #fff">&copy 2023 donot steal</footer>
+  </body>
 </html>
