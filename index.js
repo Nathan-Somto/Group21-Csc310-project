@@ -1,24 +1,21 @@
 // typer.js
-
+let i = 0;
 const text = document.querySelector('#type');
 text.innerHTML='';
-let someText ='Somto Femi Ede';
+let someText ='Created by Somto Ede Femi Demilade';
 function loop(){
-    var i = 0;
+   
     if (i < someText.length){
-        console.log(i);
-       /*  if(someText.charAt(i) === ' '){
-            text.innerHTML='';
-            i++;
-            continue;
-        }  */
-       
-    
-       setTimeout( text.innerHTML+=someText.charAt(i), 200);
+
+        text.innerHTML+=someText.charAt(i);
         i++;    
         
+    }
+    else{
+        text.innerHTML ='';
+        i = 0;
     }
    
 
 }
-loop();
+setInterval(loop, 100);

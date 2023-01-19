@@ -124,18 +124,37 @@ h2 span::after{
         height:2.5rem;
     
     }
+    #type::after{
+        content:'';
+        border:1px solid rgb(240, 235, 235);
+        height:15px;
+        width:15px;
+        animation-name: blink;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes blink {
+        from{
+            opacity:0;
+        }
+        to{
+            opacity:1;
+        }
+        
+    }
     #Calculator h1{
         font-size:2.5rem;
     }
     .about_section{
         margin:-35px;
         height:300px;
-        width:100vw;
+        min-width:100vw;
         text-align: center;
-        background-image: url('./about_geo.avif');
+        background-image: url('./about2.jpg');
         background-attachment: fixed;
         color:whitesmoke;
-        background-size: contain;
+        background-size: cover;
+        background-position: center center;
         display:flex;
         flex-direction:column;
         justify-content: center;
@@ -305,6 +324,11 @@ width:18px;
         border-radius: 4px;
         border:none;
         outline:none;
+    }
+    input[type='file']{
+        margin:0 auto;
+        display:block;
+        width:70%;
     }
     input[type='submit']{
         border:none;
